@@ -1,3 +1,4 @@
+
 # Lesson 1.1: What is Infrastructure as Code (IaC)?
 
 ## Theory
