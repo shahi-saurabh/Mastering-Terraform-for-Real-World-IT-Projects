@@ -1,0 +1,8 @@
+# Spellcheck configuration for Markdown files
+version: 0.36.0
+language: en
+files:
+  - '**/*.md'
+output:
+  summary: true
+  suggestions: true
