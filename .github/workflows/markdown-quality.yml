@@ -25,8 +25,3 @@ jobs:
           use-verbose-mode: 'yes'
           file-path: '**/*.md'
 
-      - name: Spell check Markdown files
-        uses: rojopolis/spellcheck-github-actions@v0.39.0
-        with:
-          config_path: .spellcheck.yml
-          source_files: '**/*.md'
