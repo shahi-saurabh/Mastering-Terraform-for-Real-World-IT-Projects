@@ -1,7 +1,28 @@
+
+# Capstone Project Options
+
+Choose one of the following capstone projects to apply your Terraform skills:
+
+## 1. Scalable Web Application Infrastructure (Azure or AWS)
+Design and deploy a production-grade, scalable web application infrastructure on Azure or AWS. Include networking, compute, storage, database, and serverless components.
+
+## 2. Multi-Cloud Disaster Recovery Solution
+Build a disaster recovery setup using both AWS and Azure. Use Terraform to provision resources in both clouds, configure remote state, and automate failover.
+
+## 3. Automated Data Analytics Pipeline (GCP)
+Provision a data pipeline on Google Cloud Platform using Terraform. Include storage buckets, BigQuery datasets, scheduled Cloud Functions, and monitoring resources.
+
+## 4. Secure DevOps Environment
+Create a secure DevOps environment with Terraform, including CI/CD pipelines, secrets management, monitoring, and role-based access control for a team.
+
+## 5. Hybrid Cloud Networking
+Set up a hybrid cloud network connecting on-premises infrastructure to Azure/AWS using VPNs, subnets, and security groups. Automate the setup and management with Terraform modules.
+
 # Capstone Project: Build a Complete, Scalable Web Application Infrastructure with Azure
 
+
 ## Objective
-Apply all learned Terraform concepts to design, build, and deploy a production-grade, scalable web application infrastructure on Azure.
+Apply all learned Terraform concepts to design, build, and deploy a production-grade, scalable infrastructure for your chosen project.
 
 ## Theory
 
