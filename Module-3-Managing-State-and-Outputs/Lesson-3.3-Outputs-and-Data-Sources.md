@@ -23,6 +23,22 @@ resource "aws_instance" "web" {
 output "instance_ip" {
 	value = aws_instance.web.public_ip
 }
+
+## Azure Example: Output Storage Account Name
+
+```hcl
+resource "azurerm_storage_account" "example" {
+	name                     = "examplestorageacct"
+	resource_group_name      = "example-rg"
+	location                 = "East US"
+	account_tier             = "Standard"
+	account_replication_type = "LRS"
+}
+
+output "storage_account_name" {
+	value = azurerm_storage_account.example.name
+}
+```
 ```
 
 **Use a data source to fetch the latest AMI:**
@@ -38,6 +54,22 @@ data "aws_ami" "latest" {
 
 resource "aws_instance" "web" {
 	ami           = data.aws_ami.latest.id
+
+## Azure Example: Use Data Source to Fetch Resource Group
+
+```hcl
+data "azurerm_resource_group" "example" {
+  name = "example-rg"
+}
+
+resource "azurerm_storage_account" "example" {
+  name                     = "examplestorageacct"
+  resource_group_name      = data.azurerm_resource_group.example.name
+  location                 = data.azurerm_resource_group.example.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+}
+```
 	instance_type = "t2.micro"
 }
 ```
